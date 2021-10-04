@@ -384,6 +384,7 @@
 }
 .growth_item {
     margin-bottom: 49px;
+    width: 140px;
 }
 .growth_item_h{
     font-family: 'Raleway', sans-serif;
@@ -492,4 +493,66 @@
     display: flex;
     justify-content: space-between;
     width: 96px;
+}
+
+
+/* REVIEWS */
+.page-reviews {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.review-item {
+    width: 270px;
+    font-family: 'Raleway', sans-serif;
+
+}
+.review-item-messge {
+    height: 160px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    background: #F8F8F8;
+    padding: 30px 30px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 21px;
+}
+.review-item-messge_text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19.3386px;
+    line-height: 110.1%;
+    color: #000000;
+    overflow: hidden;
+}
+
+.review-item-persone {
+    display: flex;
+}
+.review-item-persone img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+.rip-data {
+    margin-left: 24px;
+}
+.rip-nikname {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+}
+.rip-date {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
 }
