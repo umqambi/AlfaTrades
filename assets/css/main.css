@@ -1,0 +1,303 @@
+@font-face {
+	font-family: 'Coco Gothic'; 
+	src: local('Coco Gothic'),
+		url(../fonts/Coco-Gothic/Coco-Gothic-Regular.ttf); 
+}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+.h100 {
+    height: 100%;
+}
+.m-0 {
+    margin: 0;
+}
+.btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 0;
+    transition: color .15s
+}
+.btn-circle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #F8F8F8;
+    box-shadow: -3.80388px -3.80388px 9.50971px #FFFFFF, 3.80388px 3.80388px 9.50971px #D1D9E6;
+    border-radius: 50%;
+}
+.btn-blue {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #0085FF;
+    box-shadow: 0px 4px 43px rgba(0, 133, 255, 0.4);
+    border-radius: 53px;
+    padding: 16px 85px;
+}
+
+.social-link {
+    display: block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page-title {
+    font-family: 'Coco Gothic';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 94px;
+    line-height: 103px;
+    color: #000000;
+}
+.page-text {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+
+.site-container {
+    overflow: hidden;
+}
+.site-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+.main-wrap.muted {
+    position: relative;
+}
+.main-wrap.muted::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.37);
+    left: 0;
+}
+
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+}
+
+.header_logo img {
+    height: 42px;
+    width: 140px;
+}
+.header_lang {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+.header_lang a {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #9D9D9D;
+}
+.header_burger {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+}
+.top-nav-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 27px;
+    display: none;
+}
+.top-nav-wrap .header {
+    margin-bottom: 30px;
+}
+.header-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.header-nav a {
+    margin: auto 15px;
+}
+.header-nav_link {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+    text-decoration: none;
+    padding-top: 5px;
+}
+.header-nav_link:hover {
+    color: #0085FF;
+    position: relative;
+}
+.header-nav_link:hover::before {
+    content: '';
+    background-color: #0085FF;
+    height: 2px;
+    width: 34px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.top-nav-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.top-nav_social {
+    display: flex;
+    justify-content: space-between;
+    min-width: 160px;
+}
+.top-nav-footer_link {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #999999;
+}
+
+.top-nav-footer_links a {
+    margin-left: 30px;
+}
+
+/* CONTENT */
+.main-content {
+    flex-grow: 1;
+    width: 100%;
+}
+.main-content-bg-r {
+    height: 100%;
+    background: url(../img/bg-coins.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.main-content-wrap {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* FOOTER */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.footer_info {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #000000;
+}
+.footer_social {
+    display: flex;
+}
+.footer_social a {
+    margin: 0 10px;
+}
+.tg-link {
+    background-image: url(../img/telegram.svg);
+}
+.tg-link:hover {
+    background-image: url(../img/telegram-hover.svg);
+}
+.tg-link:active {
+    background-image: url(../img/telegram-activ.svg);
+}
+.vk-link {
+    background-image: url(../img/vk.svg);
+    width: 35px;
+}
+.vk-link:hover {
+    background-image: url(../img/vk-hover.svg);
+}
+.vk-link:active {
+    background-image: url(../img/vk-activ.svg);
+}
+.whatsapp-link {
+    background-image: url(../img/whatsapp.svg);
+}
+.whatsapp-link:hover {
+    background-image: url(../img/whatsapp-hover.svg);
+}
+.whatsapp-link:active {
+    background-image: url(../img/whatsapp-activ.svg);
+}
+.insta-link {
+    background-image: url(../img/instagram.svg);
+}
+.insta-link:hover {
+    background-image: url(../img/instagram-hover.svg);
+}
+.insta-link:active {
+    background-image: url(../img/instagram-activ.svg);
+}
+.footer_question .btn-circle {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21.0279px;
+    line-height: 25px;
+    color: #B7BBC6;
+}
+
+
+/* PAGES */
+
+/* INDEX */
+.page-index {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 820px;
+}
+.page-index .page-title, .page-index .page-text {
+    margin-bottom: 30px;
+}
