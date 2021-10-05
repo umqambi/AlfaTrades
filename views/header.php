@@ -41,8 +41,8 @@
                     </div>
                 </div>
                 <nav class="header-nav">
-                    <a class="header-nav_link" href="#">Главная</a>
-                    <a class="header-nav_link" href="#">О сервисе</a>
+                    <a class="header-nav_link" href="/">Главная</a>
+                    <a class="header-nav_link" href="/about">О сервисе</a>
                     <a class="header-nav_link" href="#">Отзывы</a>
                     <a class="header-nav_link" href="#">Новости</a>
                     <a class="header-nav_link" href="#">Помощь</a>
