@@ -45,11 +45,11 @@
                     <a class="header-nav_link" href="/about">О сервисе</a>
                     <a class="header-nav_link" href="#">Отзывы</a>
                     <a class="header-nav_link" href="#">Новости</a>
-                    <a class="header-nav_link" href="#">Помощь</a>
-                    <a class="header-nav_link" href="#">Резервы</a>
-                    <a class="header-nav_link" href="#">Курсы обмена </a>
-                    <a class="header-nav_link" href="#">Партнерам</a>
-                    <a class="header-nav_link" href="#">Контакты</a>
+                    <a class="header-nav_link" href="/support">Помощь</a>
+                    <a class="header-nav_link" href="/reserves">Резервы</a>
+                    <a class="header-nav_link" href="/rates">Курсы обмена </a>
+                    <a class="header-nav_link" href="/partners">Партнерам</a>
+                    <a class="header-nav_link" href="/contacts">Контакты</a>
                 </nav>
                 <div class="top-nav-footer">
                     <div class="top-nav_social">
