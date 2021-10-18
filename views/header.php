@@ -5,8 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>AlfaTrades</title>
-        <link rel="stylesheet" type="text/css" href="./assets/js/slick/slick.css"/>
-        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="../assets/js/slick/slick.css"/>
+        <link rel="stylesheet" href="../assets/ui/jquery-ui.min.css">
+        <link rel="stylesheet" href="../assets/owlcarousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="../assets/owlcarousel/owl.theme.default.min.css">
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <?php
+        if ($_SERVER['REQUEST_URI'] == '/support') {
+            echo '<link rel="stylesheet" href="../assets/css/faq.css">';
+        }
+        ?>
     </head>
     <body class="h100 m-0">
 
@@ -14,7 +22,9 @@
             <div id="top-nav" class="container top-nav-wrap">
                 <div id="header-tn" class="header">
                     <div class="header_logo">
-                        <img src="./assets/img/logo.png" alt="AlfaTraders">
+                        <a href="/">
+                            <img src="./assets/img/alfatrades.png" alt="AlfaTraders">
+                        </a>
                     </div>
                     <div class="header_lang">
                         <a href="#" class="lang-toggle">
@@ -43,8 +53,8 @@
                 <nav class="header-nav">
                     <a class="header-nav_link" href="/">Главная</a>
                     <a class="header-nav_link" href="/about">О сервисе</a>
-                    <a class="header-nav_link" href="#">Отзывы</a>
-                    <a class="header-nav_link" href="#">Новости</a>
+                    <a class="header-nav_link" href="/reviews">Отзывы</a>
+                    <a class="header-nav_link" href="/news">Новости</a>
                     <a class="header-nav_link" href="/support">Помощь</a>
                     <a class="header-nav_link" href="/reserves">Резервы</a>
                     <a class="header-nav_link" href="/rates">Курсы обмена </a>
@@ -52,16 +62,18 @@
                     <a class="header-nav_link" href="/contacts">Контакты</a>
                 </nav>
                 <div class="top-nav-footer">
-                    <div class="top-nav_social">
-                        <a class="social-link tg-link" href="#"></a>
-                        <a class="social-link vk-link" href="#"></a>
-                        <a class="social-link whatsapp-link" href="#"></a>
-                        <a class="social-link insta-link" href="#"></a>
-                    </div>
-                    <div class="top-nav-footer_links">
-                        <a class="top-nav-footer_link" href="#">Условия положения</a>
-                        <a class="top-nav-footer_link" href="#">Политика конфиденциальности</a>
-                        <a class="top-nav-footer_link" href="#">©Копирайт</a>
+                    <div class="top-nav-footer-wrap">
+                        <div class="top-nav_social">
+                            <a class="social-link tg-link" href="#"></a>
+                            <a class="social-link vk-link" href="#"></a>
+                            <a class="social-link whatsapp-link" href="#"></a>
+                            <a class="social-link insta-link" href="#"></a>
+                        </div>
+                        <div class="top-nav-footer_links">
+                            <a class="top-nav-footer_link" href="#">Условия положения</a>
+                            <a class="top-nav-footer_link" href="/ppol">Политика конфиденциальности</a>
+                            <a class="top-nav-footer_link" href="#">©Копирайт</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,7 +84,9 @@
                     <!-- header start -->
                     <div id="header" class="container header">
                         <div class="header_logo">
-                            <img src="./assets/img/logo.png" alt="AlfaTraders">
+                            <a href="/">
+                                <img src="./assets/img/alfatrades.png" alt="AlfaTraders">
+                            </a>
                         </div>
                         <div class="header_lang">
                             <a href="#" class="lang-toggle">
@@ -101,3 +115,7 @@
                     <!-- content start -->
                     <div id="content" class="main-content">
                         <!-- PAGE CONTENT HERE -->
+                        <script>
+                            let elem = document.getElementById('content');
+                            elem.setAttribute('style', 'display: none');
+                        </script>

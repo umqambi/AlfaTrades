@@ -1,0 +1,6 @@
+.site-container {
+    background: url(../img/bg-faq.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

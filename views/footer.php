@@ -26,7 +26,10 @@
         </div>
         <!-- scrips -->
         <script src="../assets/js/jquery-3.6.0.min.js"></script>
+        <script src="../assets/ui/jquery-ui.min.js"></script>
         <script type="text/javascript" src="../assets/js/slick/slick.min.js"></script>
+        <script src="../assets/owlcarousel/owl.carousel.min.js"></script>
         <script src="../assets/js/main.js"></script>
     </body>
 </html>
+
