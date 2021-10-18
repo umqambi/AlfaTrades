@@ -110,30 +110,77 @@
                     <!-- content start -->
                     <div id="content" class="main-content">
                         <!-- PAGE CONTENT HERE -->
-                        <script>
-                            let elem = document.getElementById('content');
-                            elem.setAttribute('style', 'display: none');
-                        </script>
+<div class="container main-content-bg-l exchage-wrap page-exdir">
+    <div class="exchage-cont">
+        <div class="exchage-header">
+            Направление обмена
+        </div>
+        <p>Шаг 1. Что хотите отдать и получить?</p>
 
-                        <div class="container main-content-bg-r">
-                            <div class="main-content-wrap">
-                                
-                                <div class="page-index">
-                                    <div class="page-title">
-                                        Лучший сервис по обмену валют 
-                                    </div>
-                                    <div class="page-text">
-                                        Равным образом, дальнейшее развитие различных форм деятельности предполагает независимые способы реализации первоочередных требований.
-                                    </div>
-                                    <div class="btns-wrap">
-                                        <a class="btn btn-blue" href="/start">Начать обмен</a>
-                                    </div>
-                                    
-                                </div>
-                                
-                            </div>
-                        </div>
+        <form class="exdir-form" action="/step2" method="POST">
+            <div class="exdir-form-row row1">
+                <div class="exdir-form-col1">
+                    <select name="currency1" class="currency">
+                        <option value="ethereum">
+                            <img src="../assets/img/Ethereum.svg" alt="Ethereum">
+                            <span class="eth">Ethereum</span>    
+                        </option>
+                    </select>
+                </div>
+                <div class="exdir-form-col2">
+                    <div class="currency-code">
+                        ETH
+                    </div>
+                </div>
+                <div class="exdir-form-col3">
+                    <div class="form-control amount">
+                        <label for="amount1">MIN 0.0205684/ MAX 2.05684057</label>
+                        <input id="amount1" placeholder="0.0025">
+                    </div>
+                    
+                </div>
+            </div>
 
+            <div class="exdir-form-row row2">
+                <div class="exdir-form-col1">
+                    <select name="currency2" class="currency">
+                        <option value="sbrf">
+                            <img src="../assets/img/sber.svg" alt="Сбербанк">
+                            Сбербанк
+                        </option>
+                    </select>
+                    <div class="exdir-exchage-info">
+                        1 ETH = 238255.9 RUB
+                    </div>
+                </div>
+                <div class="exdir-form-col2">
+                    <select name="val2" class="val">
+                        <option value="val2">
+                            RUB
+                        </option>
+                    </select>
+                </div>
+                <div class="exdir-form-col3">
+                    <div class="form-control amount">
+                        <input id="amount2" placeholder="5256">
+                        <label for="amount2">
+                            РЕЗЕРВЫ 31786093.2 RUB
+                        </label>
+                    </div>
+                    
+                </div>
+            </div>
+            
+
+            <div class="exdir-form-btns">
+                <button class="btn btn-blue">Продолжить</button>
+                <a class="btn btn-white" href="/">Назад</a>
+            </div>
+
+        </form>
+
+    </div>
+</div>
 
                         <!-- PAGE CONTENT END -->
                     </div>
@@ -169,3 +216,4 @@
         <script src="./assets/js/main.js"></script>
     </body>
 </html>
+
